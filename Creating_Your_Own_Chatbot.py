@@ -84,7 +84,7 @@ def get_most_relevant_sentence(query) :
             max_similarity = similarity
 
             most_relevant_sentence = sentence
-    if max_similarity > 0.4:
+    if max_similarity > 0.2:
         most_relevant_sentence=most_relevant_sentence
         
     else:
@@ -100,7 +100,7 @@ def chatbot(question) :
     phrase_la_plus_pertinente,index = get_most_relevant_sentence(question)
 
 
-    if phrase_la_plus_pertinente==phrase_la_plus_pertinente:
+    if phrase_la_plus_pertinente!='':
         
         question_answer=df.loc[[index]].values.tolist()
 
