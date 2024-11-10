@@ -84,10 +84,14 @@ def get_most_relevant_sentence(query) :
             max_similarity = similarity
 
             most_relevant_sentence = sentence
-
+    if max_similarity > 0.4:
+        most_relevant_sentence=most_relevant_sentence
+        
+    else:
+        most_relevant_sentence=''
 
     return most_relevant_sentence,index
-
+        
 
 def chatbot(question) :
 
