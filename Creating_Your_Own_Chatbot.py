@@ -1,5 +1,6 @@
 import nltk
 
+nltk.download('punkt_tab')
 
 from nltk.tag import pos_tag
 
